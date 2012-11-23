@@ -1,0 +1,21 @@
+Task.txt
+
+La escitala tiene n caras:
+	- n es un número natural y tiene como mínimo valor mínimo 1
+	- n no tiene máximo
+	- si el valor de caras es menor de 1 no se puede crear la escitala
+
+En la escitala se escriben lineas de caracteres:
+ - una cadena de caracteres puede contener cualquier tipo de caracter incluso espacios en blanco.
+ - si se introduce cualquier cadena esta puede ser leida
+ - si se introduce la cadena "En un lugar de la Mancha, de cuyo nombre no quiero acordarme" esta deber ser leida.
+
+
+ Se pueden codificar y descodificar mensajes. La decisión de que sean dos funciones está relacionada con la implementación así que no se tiene en cuenta o se tiene en cuenta solamente como dos historias de usuario distintas.La codificacion se hace cogiendo un caracter cada n posiciones siendo n el número de caras de la citara repitiiendo el proceso de forma iterativa avanzando una posición en cada iteración.
+ - Si se introduce la cadena "En un lugar de la Mancha, de cuyo nombre no quiero acordarme" y un numero de caras = 10 el resultado ha de ser "Ernu n cyna dhoocuea on ,nqr l oudladmiau ebergM rrmaaceoe"
+
+ La decodificación es similar a la codificacion excepto que el valor de salto es long_cadena / numero de caras;
+ 	- La cadena ha de ser más larga que el número de caras.
+ 	- El redondeo es a la baja.
+ 	- Si se introduce la cadena "Ernu n cyna dhoocuea on ,nqr l oudladmiau ebergM rrmaaceoe" y el numero de caras 10 el resultado es "En un lugar de la Mancha, de cuyo nombre no quiero acordarme"
+ 	- Si una escitara tiene diferentes caras que la original no se podrá decodificar el mensaje
